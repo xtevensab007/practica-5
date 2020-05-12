@@ -350,7 +350,9 @@ public class matrices extends javax.swing.JFrame {
         jButton5.setEnabled(true);
         jButton6.setEnabled(true);
         
-        
+        /**
+         * obtenemos valores de los campos de texto 
+         */
         int fila= Integer. parseInt(fa.getText());
         int colua=Integer. parseInt(ca.getText());
         int filb= Integer. parseInt(fb.getText());
@@ -358,7 +360,7 @@ public class matrices extends javax.swing.JFrame {
         
         int [][] matriza =new int[fila][colua];
         int [][] matrizb =new int[filb][colub];
-        
+        //solicitamos los datos y validamos si son numeros 
         String dato1=JOptionPane.showInputDialog("ingrese primer numero de rango aleatorio");
         while(!isNumber(dato1)){
            dato1 = JOptionPane.showInputDialog(null,"numero invalido, por favor ingrese otro");
